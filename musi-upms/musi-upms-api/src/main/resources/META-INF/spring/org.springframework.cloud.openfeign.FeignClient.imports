@@ -1,0 +1,6 @@
+com.windy.musi.admin.api.feign.RemoteClientDetailsService
+com.windy.musi.admin.api.feign.RemoteDictService
+com.windy.musi.admin.api.feign.RemoteLogService
+com.windy.musi.admin.api.feign.RemoteParamService
+com.windy.musi.admin.api.feign.RemoteTokenService
+com.windy.musi.admin.api.feign.RemoteUserService

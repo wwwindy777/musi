@@ -1,0 +1,106 @@
+version: '3'
+services:
+  musi-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: musi-mysql
+    image: musi-mysql
+    ports:
+      - 3306:3306
+    networks:
+      - spring_cloud_default
+
+  musi-redis:
+    image: redis:7.0.0
+    ports:
+      - 6379:6379
+    restart: always
+    container_name: musi-redis
+    hostname: musi-redis
+    networks:
+      - spring_cloud_default
+
+  musi-register:
+    build:
+      context: ./musi-register
+    restart: always
+    ports:
+      - 8848:8848
+      - 9848:9848
+    container_name: musi-register
+    hostname: musi-register
+    image: musi-register
+    networks:
+      - spring_cloud_default
+
+  musi-gateway:
+    build:
+      context: ./musi-gateway
+    restart: always
+    ports:
+      - 9999:9999
+    container_name: musi-gateway
+    hostname: musi-gateway
+    image: musi-gateway
+    networks:
+      - spring_cloud_default
+
+  musi-auth:
+    build:
+      context: ./musi-auth
+    restart: always
+    container_name: musi-auth
+    hostname: musi-auth
+    image: musi-auth
+    networks:
+      - spring_cloud_default
+
+  musi-upms:
+    build:
+      context: ./musi-upms/musi-upms-biz
+    restart: always
+    container_name: musi-upms
+    hostname: musi-upms
+    image: musi-upms
+    networks:
+      - spring_cloud_default
+
+  musi-monitor:
+    build:
+      context: ./musi-visual/musi-monitor
+    restart: always
+    ports:
+      - 5001:5001
+    container_name: musi-monitor
+    hostname: musi-monitor
+    image: musi-monitor
+    networks:
+      - spring_cloud_default
+
+  musi-codegen:
+    build:
+      context: ./musi-visual/musi-codegen
+    restart: always
+    container_name: musi-codegen
+    hostname: musi-codegen
+    image: musi-codegen
+    networks:
+      - spring_cloud_default
+
+  musi-quartz:
+    build:
+      context: ./musi-visual/musi-quartz
+    restart: always
+    image: musi-quartz
+    container_name: musi-quartz
+    networks:
+      - spring_cloud_default
+
+networks:
+  spring_cloud_default:
+    name:  spring_cloud_default
+    driver: bridge

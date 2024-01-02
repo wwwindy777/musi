@@ -1,0 +1,3 @@
+com.windy.musi.common.feign.MusiFeignAutoConfiguration
+com.windy.musi.common.feign.sentinel.SentinelAutoConfiguration
+com.windy.musi.common.feign.sentinel.handle.GlobalBizExceptionHandler

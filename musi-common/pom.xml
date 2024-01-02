@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2020 musi4cloud Authors. All Rights Reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.windy</groupId>
+        <artifactId>musi</artifactId>
+        <version>3.7.2</version>
+    </parent>
+
+    <artifactId>musi-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>musi 公共聚合模块</description>
+
+    <modules>
+        <module>musi-common-bom</module>
+        <module>musi-common-core</module>
+        <module>musi-common-datasource</module>
+        <module>musi-common-log</module>
+        <module>musi-common-mybatis</module>
+        <module>musi-common-oss</module>
+        <module>musi-common-seata</module>
+        <module>musi-common-security</module>
+        <module>musi-common-feign</module>
+        <module>musi-common-swagger</module>
+        <module>musi-common-xss</module>
+    </modules>
+</project>

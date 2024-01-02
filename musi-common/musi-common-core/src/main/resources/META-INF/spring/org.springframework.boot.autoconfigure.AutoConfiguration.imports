@@ -1,0 +1,6 @@
+com.windy.musi.common.core.config.TaskExecutorConfiguration
+com.windy.musi.common.core.config.JacksonConfiguration
+com.windy.musi.common.core.config.RedisTemplateConfiguration
+com.windy.musi.common.core.config.RestTemplateConfiguration
+com.windy.musi.common.core.util.SpringContextHolder
+com.windy.musi.common.core.config.WebMvcConfiguration

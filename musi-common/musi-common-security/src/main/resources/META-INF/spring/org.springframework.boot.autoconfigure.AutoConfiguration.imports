@@ -1,0 +1,7 @@
+com.windy.musi.common.security.service.MusiUserDetailsServiceImpl
+com.windy.musi.common.security.service.MusiAppUserDetailsServiceImpl
+com.windy.musi.common.security.service.MusiRedisOAuth2AuthorizationService
+com.windy.musi.common.security.service.MusiRedisOAuth2AuthorizationConsentService
+com.windy.musi.common.security.component.MusiSecurityInnerAspect
+com.windy.musi.common.security.component.MusiSecurityMessageSourceConfiguration
+com.windy.musi.common.security.service.MusiRemoteRegisteredClientRepository

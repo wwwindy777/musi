@@ -1,0 +1,12 @@
+{
+  "project": {
+    "packageName": "com.windy.musi",
+    "version": "1.0.0",
+    "backendPath": "musi",
+    "frontendPath": "musi-ui"
+  },
+  "developer": {
+    "author": "musi",
+    "email": "musi4cloud@qq.com"
+  }
+}
