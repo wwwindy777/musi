@@ -22,3 +22,7 @@ spring:
     username: root
     password: ${MYSQL_PW:root}
     url: jdbc:mysql://musi-mysql:3306/musi-iwindy?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+mybatis-plus:
+  configuration:
+    #输出查询结果日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

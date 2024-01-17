@@ -23,7 +23,7 @@ public class AccountInfoEntity extends Model<AccountInfoEntity> {
 	/**
 	* 主键
 	*/
-    @TableId(type = IdType.ASSIGN_ID)
+    @TableId(type = IdType.AUTO)
     @Schema(description="主键")
     private Integer id;
 
@@ -88,7 +88,6 @@ public class AccountInfoEntity extends Model<AccountInfoEntity> {
 	* 删除标志
 	*/
     @TableLogic
-		@TableField(fill = FieldFill.INSERT)
     @Schema(description="删除标志")
     private Integer delFlag;
 }
